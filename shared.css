@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --pure-black: #000000;
+  --pure-white: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.navbar {
+  height: 4.5rem;
+  background: var(--pure-white);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.menu__list li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: normal;
+  line-height: 1rem;
+}
+
+.nav__cta > button {
+  height: 2.5rem;
+  width: 10rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: var(--pure-black);
+  color: var(--pure-white);
+}

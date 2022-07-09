@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+.hero__module1,
+.hero__module3 {
+  display: grid;
+  grid-template-columns: 1.15fr 1.6fr;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.hero__module2 {
+  display: grid;
+  grid-template-columns: 1.6fr 1.15fr;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.module1__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--pure-black);
+  color: var(--pure-white);
+  padding: 173px 112px;
+}
+
+.module1__text::before {
+  content: "";
+  width: 6px;
+  height: 304px;
+  position: absolute;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  left: 0;
+}
+
+.module3__text,
+.module2__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--pure-black);
+  padding: 173px 112px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+}
+.description {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 25px;
+  opacity: 0.6;
+  margin-top: 1.5rem;
+}
+
+.link {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.module1__img img,
+.module2__img img,
+.module3__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.bitmaps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.bitmap1,
+.bitmap2,
+.bitmap3,
+.bitmap4 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.bitmap1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("starter-code/assets/stories/desktop/mountains.jpg");
+}
+
+.bitmap2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("starter-code/assets/stories/desktop/cityscapes.jpg");
+}
+
+.bitmap3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("starter-code/assets/stories/desktop/18-days-voyage.jpg");
+}
+
+.bitmap4 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("starter-code/assets/stories/desktop/architecturals.jpg");
+}
+
+.overlay__text {
+  position: relative;
+  top: 23rem;
+  left: 2rem;
+  color: var(--pure-white);
+  display: inline-block;
+}
+
+.bitmap__info span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.line {
+  height: 1px;
+  background: var(--pure-white);
+  opacity: 0.25;
+  width: 280px;
+  margin-top: 1rem;
+}
+
+.bitmap__link {
+  margin-top: 1rem;
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 11rem 8rem;
+  text-align: center;
+  align-items: center;
+}
+
+.feature__title {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#feature2 > .feature__image {
+  padding-top: 1rem;
+}
+
+#feature2 > .feature__title {
+  margin-top: 4.3rem;
+}
+
+.feature__description {
+  margin-top: 1rem;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 900px) and (max-width: 1339px) {
+  .line {
+    width: 190px;
+  }
+
+  .bitmap__link {
+    width: 190px;
+  }
+}
