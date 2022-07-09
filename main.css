@@ -140,6 +140,10 @@
   display: inline-block;
 }
 
+.bitmap__info{
+  font-size: 1.3rem;
+}
+
 .bitmap__info span {
   font-size: 13px;
   font-weight: 400;
