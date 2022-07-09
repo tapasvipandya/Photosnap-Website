@@ -192,6 +192,20 @@
   font-weight: 400;
 }
 
+.footer__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.company__logo--footer{
+  grid-area: logo;
+}
+
+.social-media-icon{
+  grid-area: icons;
+}
+
+
 /* Media Queries */
 
 @media only screen and (min-width: 900px) and (max-width: 1339px) {
