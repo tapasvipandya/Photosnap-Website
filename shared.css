@@ -45,6 +45,11 @@ body {
   line-height: 1rem;
 }
 
+.menu__list li:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
 .nav__cta > button {
   height: 2.5rem;
   width: 10rem;
@@ -52,4 +57,10 @@ body {
   letter-spacing: 2px;
   background: var(--pure-black);
   color: var(--pure-white);
+  border: none;
+}
+
+.nav__cta > button:hover {
+  opacity: 0.3;
+  cursor: pointer;
 }
